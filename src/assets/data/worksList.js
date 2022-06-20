@@ -6,6 +6,7 @@ const worksList = [
         date:'2022.06',
         content: '2022년에 제작한 리액트 기반 포트폴리오 사이트',
         link:'http://yoonzeen.net/zeen',
+        link2:'https://github.com/yoonzeen/zeen.git',
         desc:'2021년 말 ~ 2022년 초까지 자기개발로 이젠아카데미에서 배웠던 리액트 자바스크립트 라이브러리를 공부했습니다. 이 기술을 포트폴리오 사이트를 제작하는 데 사용해보았습니다. 프론트엔드에 더더욱 빠지게 되는 계기가 되었습니다.'
     }, 
     {
@@ -15,6 +16,7 @@ const worksList = [
         date:'2022.05',
         content: '리액트 기반 사이트(node.js도 아주 살짝 교육만)',
         link:'https://yoonzeen.github.io/jei_react/',
+        link2:'https://github.com/yoonzeen/jei_react.git',
         desc:'사내 교육용으로 만들어본 리액트 기반 회의실 예약 시스템입니다. 회의실예약 화면 구현은 리덕스로 제작하였습니다. 백엔드까지 교육을 받아 서버 연동까지 시켰지만, 제가 현재로써는 나아갈 방향이 프론트엔드라고 생각했기 때문에 프론트엔드쪽으로 코드를 수정하였습니다.'
     }, 
     {
