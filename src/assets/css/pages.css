@@ -98,13 +98,14 @@
     .home .content {padding-top:120px;}
     .home h2 {font-size:35px;}
     .home .floating-btn {top:300px;}
-    .profile .content {padding-top:60px;}
+    .profile .content {padding-top:45px;}
     .profile .tbl-content {width:100%; flex-direction: column;}
     .profile .tbl-title {width:100%; }
     .profile .bg-video {width:100%; height:100px; overflow:hidden;}
     .profile .bg-video video {height:100%;}
     .profile table {width:100%;}
     .bg-lg-text{display:none;}
+    .works .content {padding-top:45px;}
     .works .floating-btn {top:60px; font-size:15px;}
     .small-nav {margin-top:15px; text-align: left; margin-left:15px;}
     .work-frame {height:calc(100vh - 150px);}

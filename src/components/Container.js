@@ -10,6 +10,7 @@ const Container = ({pageState, navList}) => {
         const focusedNav = document.querySelector('.screen' + pageState);
         screens.forEach((el) => el.classList.remove('focused'));
         focusedNav.classList.add('focused');
+        focusedNav.scrollTop = 0;
     },[pageState]);
     return (
         <>
