@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import CalculateWidth from './assets/hooks/CalculateWidth';
+import MoveToLeft from './assets/hooks/MoveToLeft';
 import Container from './components/Container';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -17,6 +19,14 @@ const Wrapper = () => {
     //     setLoading(false);
     // },[]);
 
+    useEffect(() => {
+        window.addEventListener('resize', CalculateWidth);
+        return () => {
+            window.removeEventListener('resize', CalculateWidth);
+        }
+    },[]);
+    
+
     const navList = [
         {idx : 0, idxName:'screen0', name:'home', tag:<Home setPageState={setPageState} />},
         {idx : 1, idxName:'screen1', name: 'profile', tag:<Profile setPageState={setPageState} />},
@@ -27,7 +37,7 @@ const Wrapper = () => {
         <>
             <div className="wrapper">
                 <Header changePage={changePage} navList={navList} />
-                <Container pageState={pageState} setPageState={setPageState} navList={navList} />
+                <Container pageState={pageState} navList={navList} />
                 <Footer />
             </div>  
             <div className="first-loading">

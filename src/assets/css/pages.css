@@ -6,7 +6,7 @@
 
 /* profile css */
 .profile {background-color: #74B49B;}
-.profile .tbl-title {width:600px; text-align:center; background-color:#5C8D89; color:#fff; margin:0 auto; border-bottom:1px solid #ddd;}
+.profile .tbl-title {width:600px; text-align:center; background-color:#5C8D89; color:#fff; margin:0 auto; border-bottom:1px solid #ddd; padding:7px 0;}
 .profile .tbl {height:calc(100vh - 150px); padding-bottom:50px; overflow-y:auto; position:relative; top:50px; opacity:0; text-align:center;}
 .profile .tbl-content {width:600px; display:flex; flex-direction: row; justify-items: center; margin:0 auto;}
 .profile .tbl-content::after {content:''; display:block; clear:both;}
