@@ -34,7 +34,7 @@ const worksList = [
         title:'Just Enjoy Youth',
         date:'2019.06',
         content: '이름 이니셜(YJE)을 따서 포트폴리오 사이트 제작',
-        link:'http://yoonzeen.net/2019/',
+        link:'https://yoonzeen.github.io/zeen2019/',
         desc:'vue를 살짝 공부했던 시절이었습니다. 포트폴리오 사이트 제작하는 실행에 옮겨보려 했으나, 아직은 멀었구나 하는 생각에 jQuery로 사이트를 제작했습니다.'
     },
     {
@@ -43,7 +43,7 @@ const worksList = [
         title:'Jeju Osulloc',
         date:'2018.07',
         content: '2017년 말, 혼자 제주도 여행을 하고 제주 오설록이 감명깊어서 오설록 소개 페이지를 제작',
-        link:'http://yoonzeen.net/osulloc/',
+        link:'https://yoonzeen.github.io/zeen_osulloc/',
         desc:'원래 로그인도 됐었는데(php) 지금은 서버 연동 방법도 잊어버려서 정적인 영역만 보여줄 수 있게 되었습니다. 디자인부터 웹 퍼블리싱까지 모두 혼자 스스로 하였습니다. 6개월 간 교육의 최종 프로젝트였는데, 아직까지도 스스로 만족하는 프로젝트 입니다.'
     },
  ];
