@@ -1,7 +1,7 @@
 /* home css */
 .home.focused {display:flex; height:calc(100vh - 34px); overflow:hidden;}
 .home .content {display:block; height:100%; position:relative; padding-top:60px}
-.home video {width:100%;}
+.home video {object-fit: fill;}
 .home h2 { font-size:45px; margin-bottom:20px; color:#eaf8ff; font-family: 'Courgette', cursive;}
 .home p {line-height:25px;  font-family: 'Courgette', cursive;}
 
