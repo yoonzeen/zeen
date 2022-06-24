@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 
 const Header = ({navList, changePage}) => {
-    const [showHeader, setShowHeader] = useState(false);
-    
-    const toggleShowHeader = (showHeader) => {
-        const header = document.querySelector('.header');
-        header.classList.toggle('on');
-        setShowHeader(showHeader);
-    }
     return (
         <>
             <div className="header">
@@ -20,7 +13,6 @@ const Header = ({navList, changePage}) => {
                             }
                         </ul>
                     </div>
-                    <div className="toggleBtn" onClick={() => toggleShowHeader(!showHeader)}><span className="toggleBtnImg"></span></div>
                 </div>
             </div>
         </>

@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import CalculateWidth from './assets/hooks/CalculateWidth';
-import MoveToLeft from './assets/hooks/MoveToLeft';
 import Container from './components/Container';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -19,19 +17,11 @@ const Wrapper = () => {
     //     setLoading(false);
     // },[]);
 
-    useEffect(() => {
-        window.addEventListener('resize', CalculateWidth);
-        return () => {
-            window.removeEventListener('resize', CalculateWidth);
-        }
-    },[]);
-    
-
     const navList = [
-        {idx : 0, idxName:'screen0', name:'home', tag:<Home setPageState={setPageState} />},
-        {idx : 1, idxName:'screen1', name: 'profile', tag:<Profile setPageState={setPageState} />},
-        {idx : 2, idxName:'screen2', name:'works', tag:<Works setPageState={setPageState} />},
-        {idx : 3, idxName:'screen3', name:'contact', tag:<Contact setPageState={setPageState} />}
+        {idx : 0, idxName:'screen0', name:'home', tag:<Home />},
+        {idx : 1, idxName:'screen1', name: 'profile', tag:<Profile />},
+        {idx : 2, idxName:'screen2', name:'works', tag:<Works />},
+        {idx : 3, idxName:'screen3', name:'contact', tag:<Contact />}
     ];
     return (
         <>

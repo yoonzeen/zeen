@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Profile = ({setPageState}) => {
+const Profile = () => {
     return (
         <>
             <div className="content">
@@ -80,9 +80,6 @@ const Profile = ({setPageState}) => {
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                    <div className="floating-btn" onClick={() => setPageState(2)}>
-                        Go To Works
                     </div>
                 </div>
             </div>

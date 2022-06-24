@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import LoadingSpinner from '../../components/LoadingSpinner';
 
-const Home = ({setPageState}) => {
+const Home = () => {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         setLoading(false);
@@ -20,9 +20,6 @@ const Home = ({setPageState}) => {
                                 <h2>It is Yoonzeen -</h2>
                                 <p>Welcome to my Space.<br/>
                                 This was started from 'Hello World'.</p>
-                            </div>
-                            <div className="floating-btn" onClick={() => setPageState(1)}>
-                                Go To Profile
                             </div>
                         </div>
                     </div>

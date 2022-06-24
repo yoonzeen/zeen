@@ -4,7 +4,7 @@ import WorksFrame from './WorksFrame';
 import classnames from 'classnames';
 
 
-const Works = ({setPageState}) => {
+const Works = () => {
     const [navState, setNavState] = useState(0);
     const changeNavState = (navState) => {
         setNavState(navState);
@@ -20,7 +20,7 @@ const Works = ({setPageState}) => {
         focusedNav.classList.add('focused');
         worksFrameArray.forEach((el) => el.classList.remove('focused'));
         focusedFrame.classList.add('focused');
-        focusedFrame.scrollTop = 0;
+        window.scrollTo(0,0);
     },[navState]);
     return (
         <>
@@ -34,12 +34,8 @@ const Works = ({setPageState}) => {
                 </div>
                 <div className="works-area">
                     {
-                        worksList.map((item) => <WorksFrame key={item.idx} item={item} navState={navState} />)
+                        worksList.map((item) => <WorksFrame key={item.idx} item={item} />)
                     }
-                </div>
-                
-                <div className="floating-btn" onClick={() => setPageState(3)}>
-                    Go To Contact
                 </div>
             </div>
         </>
