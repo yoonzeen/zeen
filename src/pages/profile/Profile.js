@@ -2,7 +2,7 @@ import React from 'react';
 
 const Profile = () => {
     return (
-        <>
+        <div className="content-wrap">
             <div className="content">
                 <div className="left-to-right bg-lg-text">
                     YOON
@@ -83,7 +83,7 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

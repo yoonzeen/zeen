@@ -25,7 +25,7 @@ const worksList = [
         title:'바닐라JS로 크롬 앱 만들기',
         date:'2022.03',
         content: '바닐라JS로 제작. localStorage를 이용한 로그인, 날씨, 시각을 보여주는 웹',
-        link:'https://yoonzeen.github.io/NomadCoders_vanillajs.github.io/',
+        link:'https://yoonzeen.github.io/vanilla_js/',
         desc:'회사에서 jQuery만 쓰다보니 지겨워져서 javascript를 혼자 노마드코더라는 사이트에서 공부해보기로 했습니다. 하나하나 연습해서 최종 과제물 탄생!'
     }, 
     {
