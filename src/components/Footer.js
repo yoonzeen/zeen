@@ -5,7 +5,7 @@ const Footer = () => {
         <>
             <div className="footer">
                 <p>
-                    Copyright 2022. Yoonzeen All rights reserved.
+                    Copyright 2023. Yoonzeen All rights reserved.
                 </p>
             </div>
         </>

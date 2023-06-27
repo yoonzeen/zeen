@@ -6,19 +6,6 @@
 .home p {line-height:25px;  font-family: 'Courgette', cursive;}
 
 /* profile css */
-.profile {background-color: #74B49B;}
-.profile .content-wrap {height:calc(100vh - 34px); overflow-y:auto;}
-.profile .content {padding-bottom:50px;}
-.profile .tbl-title {width:600px; text-align:center; background-color:#5C8D89; color:#fff; margin:0 auto; border-bottom:1px solid #ddd; padding:7px 0;}
-.profile .tbl { position:relative; top:50px; opacity:0; text-align:center; }
-.profile .tbl-content {width:600px; display:flex; flex-direction: row; justify-items: center; margin:0 auto;}
-.profile .tbl-content::after {content:''; display:block; clear:both;}
-.profile .bg-video {width:220px; display:flex; align-items: center; justify-items: center; background-color:#000; border-bottom:none;}
-.profile table {width:380px; table-layout: fixed; border-collapse: collapse; margin:0 auto;}
-.profile table th {text-align:center; font-weight:500; background-color:#5C8D89;  color:#fff; padding:7px; border-bottom:1px solid #ddd; font-size:14px;}
-.profile table td {background-color:#fff; color:#333; border-bottom:1px solid #ddd; font-size:14px; padding:7px; word-break: keep-all; line-height:22px; text-align:left;}
-.profile table tr:last-child th, .profile table tr:last-child td {border-bottom:none;}
-.profile table a {color:#0275d8; text-decoration: none;}
 
 .tooltip-wrap {font-size:10px; color:#0275d8; display:inline-block; vertical-align: top; position:relative; cursor:pointer;}
 .tooltip {display:none;}
@@ -36,7 +23,6 @@
 
 /* works css */
 .works {background-color:#849bc3;}
-.works .content {display:block; padding-bottom:50px;}
 .small-nav {margin-bottom:20px; text-align:center; position:relative; }
 .small-nav li {display:inline-block; width:15px; height:15px; background-color:#F9F8EB; border-radius:50%; margin-right:20px; cursor:pointer;}
 .small-nav li:last-child {margin-right:0;}

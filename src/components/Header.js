@@ -1,19 +1,10 @@
 import React, { useState } from 'react';
 
-const Header = ({navList, changePage}) => {
+const Header = () => {
     return (
         <>
             <div className="header">
-                <div className="content">
-                    <h1><img src="/assets/images/logo_white_header.png" alt="logo" className="logo"/></h1>
-                    <div className="nav">
-                        <ul>
-                            {
-                                navList.map((el) => <li key={el.idx} onClick={() => changePage(el.idx)}>{el.name}</li>)
-                            }
-                        </ul>
-                    </div>
-                </div>
+                header
             </div>
         </>
     );

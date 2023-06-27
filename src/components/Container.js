@@ -1,25 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import classnames from 'classnames';
+import React from 'react';
 import '../assets/css/pages.css';
+import Home from '../pages/home';
+import Profile from '../pages/profile';
+import Works from '../pages/works';
+import Contact from '../pages/contact';
 
-const Container = ({pageState, navList}) => { 
-    const [scroll, setScroll] = useState(false);
-    useEffect(()=> {
-        const screens = document.querySelectorAll('.screen');
-        const focusedNav = document.querySelector('.screen' + pageState);
-        screens.forEach((el) => el.classList.remove('focused'));
-        focusedNav.classList.add('focused');
-        window.scrollTo(0,0);
-    },[pageState]);
+const Container = () => {
     return (
         <>
-            <div className="container">
-                <ul className="screen-wrap">
-                    {
-                        navList.map((el) => <li className={classnames('screen', el.idxName, el.name)} key={el.idx}>{el.tag}</li>)
-                    }
-                </ul>
-            </div>
+            <Home />
+            <Profile />
+            <Works />
+            <Contact />
         </>
     );
 };
