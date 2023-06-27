@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import gsap from 'gsap';
+import React, { useEffect, useLayoutEffect, useRef } from 'react';
 import styled from 'styled-components';
-import LoadingSpinner from '../../components/LoadingSpinner';
+
 
 const StyledHomeContent = styled.div`
     .content { 
@@ -10,18 +11,25 @@ const StyledHomeContent = styled.div`
 `
 
 const Home = () => {
-    const [loading, setLoading] = useState(true);
-    useEffect(() => {
-        setLoading(false);
-    },[]);
-    return (
-        <StyledHomeContent>
-            {
-                loading ? <LoadingSpinner /> :
-                <div className='content'>
-                    <h1>test</h1>    
-                </div>
+    const homeContent = useRef();
+    useLayoutEffect(() => {
+        gsap.to(homeContent.current.querySelector('.content'), {
+            ease: 'none',
+            scrollTrigger: {
+                trigger:homeContent.current.querySelector('.content'),
+                pin: true,
+                scrub: 1,
+                markers: true,
+                end: () => "+=" + homeContent.current.offsetHeight
             }
+        })
+
+    }, []);
+    return (
+        <StyledHomeContent ref={homeContent}>
+            <div className='content'>
+                <h1>test</h1>    
+            </div>
         </StyledHomeContent>
     );
 };
